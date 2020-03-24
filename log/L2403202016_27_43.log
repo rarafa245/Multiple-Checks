@@ -1,0 +1,126 @@
+2020-03-24 16:29:05,093: DEBUG: application.controller.insert_handler : Insert a Table REPORTCONFIGSCELLA4
+2020-03-24 16:29:05,470: DEBUG: application.controller.insert_handler : Table not registrated in _tables_id!
+2020-03-24 16:29:12,562: DEBUG: application.controller.insert_handler : Insert in DB: y
+2020-03-24 16:29:12,968: DEBUG: application.controller.insert_handler : PKs: distName
+2020-03-24 16:29:17,421: DEBUG: application.controller.insert_handler : Are you sure to insert the datas? Y/N: y
+2020-03-24 16:29:18,156: DEBUG: application.controller.insert_handler : (1, 'record inserted.')
+2020-03-24 16:30:17,396: DEBUG: application.controller.insert_handler : Insert a Table REPORTCONFIGSCELLA6
+2020-03-24 16:30:18,003: DEBUG: application.controller.insert_handler : Table not registrated in _tables_id!
+2020-03-24 16:30:21,549: DEBUG: application.controller.insert_handler : Insert in DB: y
+2020-03-24 16:30:21,994: DEBUG: application.controller.insert_handler : PKs: distName
+2020-03-24 16:30:24,312: DEBUG: application.controller.insert_handler : Are you sure to insert the datas? Y/N: y
+2020-03-24 16:30:25,365: DEBUG: application.controller.insert_handler : (1, 'record inserted.')
+2020-03-24 16:31:06,594: DEBUG: application.controller.insert_handler : Insert a Table REPORTCONFIGCSFBCDMA2000
+2020-03-24 16:31:06,961: DEBUG: application.controller.insert_handler : Table not registrated in _tables_id!
+2020-03-24 16:31:08,911: DEBUG: application.controller.insert_handler : Insert in DB: y
+2020-03-24 16:31:09,296: DEBUG: application.controller.insert_handler : PKs: distName
+2020-03-24 16:31:10,375: DEBUG: application.controller.insert_handler : Are you sure to insert the datas? Y/N: y
+2020-03-24 16:31:11,086: DEBUG: application.controller.insert_handler : (1, 'record inserted.')
+2020-03-24 16:31:19,055: DEBUG: application.controller.insert_handler : Insert a Table MACCONFIGURATION
+2020-03-24 16:31:19,421: DEBUG: application.controller.insert_handler : Table not registrated in _tables_id!
+2020-03-24 16:31:23,771: DEBUG: application.controller.insert_handler : Insert in DB: y
+2020-03-24 16:31:24,181: DEBUG: application.controller.insert_handler : PKs: distName
+2020-03-24 16:31:27,977: DEBUG: application.controller.insert_handler : Are you sure to insert the datas? Y/N: y
+2020-03-24 16:31:28,710: DEBUG: application.controller.insert_handler : (1, 'record inserted.')
+2020-03-24 16:31:39,409: DEBUG: application.controller.insert_handler : Insert a Table CELLSLEEPNODEFUNCTION
+2020-03-24 16:31:39,765: DEBUG: application.controller.insert_handler : Table not registrated in _tables_id!
+2020-03-24 16:31:43,646: DEBUG: application.controller.insert_handler : Insert in DB: y
+2020-03-24 16:31:44,016: DEBUG: application.controller.insert_handler : PKs: distName
+2020-03-24 16:31:46,350: DEBUG: application.controller.insert_handler : Are you sure to insert the datas? Y/N: y
+2020-03-24 16:31:47,102: DEBUG: application.controller.insert_handler : (1, 'record inserted.')
+2020-03-24 16:31:54,689: DEBUG: application.controller.insert_handler : Insert a Table REPORTCONFIGEUTRAINTRAFREQPM
+2020-03-24 16:31:55,047: DEBUG: application.controller.insert_handler : Table not registrated in _tables_id!
+2020-03-24 16:31:57,030: DEBUG: application.controller.insert_handler : Insert in DB: y
+2020-03-24 16:31:57,406: DEBUG: application.controller.insert_handler : PKs: distName
+2020-03-24 16:32:00,952: DEBUG: application.controller.insert_handler : Are you sure to insert the datas? Y/N: y
+2020-03-24 16:32:01,730: DEBUG: application.controller.insert_handler : (1, 'record inserted.')
+2020-03-24 16:32:12,792: DEBUG: application.controller.insert_handler : Insert a Table NONPLANNEDPCIDRXPROFILE
+2020-03-24 16:32:13,176: DEBUG: application.controller.insert_handler : Table not registrated in _tables_id!
+2020-03-24 16:32:21,391: DEBUG: application.controller.insert_handler : Insert in DB: y
+2020-03-24 16:32:21,781: DEBUG: application.controller.insert_handler : PKs: distName
+2020-03-24 16:32:24,275: DEBUG: application.controller.insert_handler : Are you sure to insert the datas? Y/N: y
+2020-03-24 16:32:24,973: DEBUG: application.controller.insert_handler : (1, 'record inserted.')
+2020-03-24 16:32:34,876: DEBUG: application.controller.insert_handler : Insert a Table AUTOCELLCAPESTFUNCTION
+2020-03-24 16:32:35,234: DEBUG: application.controller.insert_handler : Table not registrated in _tables_id!
+2020-03-24 16:32:40,370: DEBUG: application.controller.insert_handler : Insert in DB: y
+2020-03-24 16:32:40,803: DEBUG: application.controller.insert_handler : PKs: distName
+2020-03-24 16:32:46,025: DEBUG: application.controller.insert_handler : Are you sure to insert the datas? Y/N: y
+2020-03-24 16:32:46,804: DEBUG: application.controller.insert_handler : (1, 'record inserted.')
+2020-03-24 16:32:55,285: DEBUG: application.controller.insert_handler : Insert a Table MIMOSLEEPFUNCTION
+2020-03-24 16:32:55,672: DEBUG: application.controller.insert_handler : Table not registrated in _tables_id!
+2020-03-24 16:32:58,031: DEBUG: application.controller.insert_handler : Insert in DB: y
+2020-03-24 16:32:58,438: DEBUG: application.controller.insert_handler : PKs: distName
+2020-03-24 16:33:00,100: DEBUG: application.controller.insert_handler : Are you sure to insert the datas? Y/N: y
+2020-03-24 16:33:00,823: DEBUG: application.controller.insert_handler : (1, 'record inserted.')
+2020-03-24 16:33:09,781: DEBUG: application.controller.insert_handler : Insert a Table GERANFREQGROUPRELATION
+2020-03-24 16:33:10,187: DEBUG: application.controller.insert_handler : Table not registrated in _tables_id!
+2020-03-24 16:33:12,603: DEBUG: application.controller.insert_handler : Insert in DB: y
+2020-03-24 16:33:13,005: DEBUG: application.controller.insert_handler : PKs: distName
+2020-03-24 16:33:13,969: DEBUG: application.controller.insert_handler : Are you sure to insert the datas? Y/N: y
+2020-03-24 16:33:14,748: DEBUG: application.controller.insert_handler : (1, 'record inserted.')
+2020-03-24 16:33:30,298: DEBUG: application.controller.insert_handler : Insert a Table FREQUENCYSYNCIO
+2020-03-24 16:33:30,667: DEBUG: application.controller.insert_handler : Table not registrated in _tables_id!
+2020-03-24 16:33:36,297: DEBUG: application.controller.insert_handler : Insert in DB: y
+2020-03-24 16:33:36,703: DEBUG: application.controller.insert_handler : PKs: distName
+2020-03-24 16:33:41,031: DEBUG: application.controller.insert_handler : Are you sure to insert the datas? Y/N: y
+2020-03-24 16:33:41,801: DEBUG: application.controller.insert_handler : (1, 'record inserted.')
+2020-03-24 16:33:51,682: DEBUG: application.controller.insert_handler : Insert a Table RLFPROFILE
+2020-03-24 16:33:52,086: DEBUG: application.controller.insert_handler : Table not registrated in _tables_id!
+2020-03-24 16:33:54,156: DEBUG: application.controller.insert_handler : Insert in DB: y
+2020-03-24 16:33:54,562: DEBUG: application.controller.insert_handler : PKs: distName
+2020-03-24 16:33:55,687: DEBUG: application.controller.insert_handler : Are you sure to insert the datas? Y/N: y
+2020-03-24 16:33:56,452: DEBUG: application.controller.insert_handler : (1, 'record inserted.')
+2020-03-24 16:34:05,621: DEBUG: application.controller.insert_handler : Insert a Table REPORTCONFIGB2CDMAULTRIG
+2020-03-24 16:34:06,000: DEBUG: application.controller.insert_handler : Table not registrated in _tables_id!
+2020-03-24 16:34:09,844: DEBUG: application.controller.insert_handler : Insert in DB: y
+2020-03-24 16:34:10,247: DEBUG: application.controller.insert_handler : PKs: distName
+2020-03-24 16:34:15,660: DEBUG: application.controller.insert_handler : Are you sure to insert the datas? Y/N: y
+2020-03-24 16:34:16,377: DEBUG: application.controller.insert_handler : (1, 'record inserted.')
+2020-03-24 16:34:25,589: DEBUG: application.controller.insert_handler : Insert a Table REPORTCONFIGEUTRAINTERFREQPM
+2020-03-24 16:34:25,953: DEBUG: application.controller.insert_handler : Table not registrated in _tables_id!
+2020-03-24 16:34:28,488: DEBUG: application.controller.insert_handler : Insert in DB: y
+2020-03-24 16:34:28,885: DEBUG: application.controller.insert_handler : PKs: distName
+2020-03-24 16:34:29,966: DEBUG: application.controller.insert_handler : Are you sure to insert the datas? Y/N: y
+2020-03-24 16:34:30,679: DEBUG: application.controller.insert_handler : (1, 'record inserted.')
+2020-03-24 16:34:49,318: DEBUG: application.controller.insert_handler : Insert a Table SIGNALINGRADIOBEARER
+2020-03-24 16:34:49,982: DEBUG: application.controller.insert_handler : Table not registrated in _tables_id!
+2020-03-24 16:34:52,312: DEBUG: application.controller.insert_handler : Insert in DB: y
+2020-03-24 16:34:53,052: DEBUG: application.controller.insert_handler : PKs: distName
+2020-03-24 16:34:58,462: DEBUG: application.controller.insert_handler : Are you sure to insert the datas? Y/N: y
+2020-03-24 16:35:00,234: DEBUG: application.controller.insert_handler : (1, 'record inserted.')
+2020-03-24 16:35:09,915: DEBUG: application.controller.insert_handler : Insert a Table SFPMODULE
+2020-03-24 16:35:10,754: DEBUG: application.controller.insert_handler : Table not registrated in _tables_id!
+2020-03-24 16:35:13,542: DEBUG: application.controller.insert_handler : Insert in DB: y
+2020-03-24 16:35:14,390: DEBUG: application.controller.insert_handler : PKs: distName
+2020-03-24 16:35:17,864: DEBUG: application.controller.insert_handler : Are you sure to insert the datas? Y/N: y
+2020-03-24 16:35:19,126: DEBUG: application.controller.insert_handler : (1, 'record inserted.')
+2020-03-24 16:35:37,598: DEBUG: application.controller.insert_handler : Insert a Table SCTPASSOCIATION
+2020-03-24 16:35:37,953: DEBUG: application.controller.insert_handler : Table not registrated in _tables_id!
+2020-03-24 16:35:41,468: DEBUG: application.controller.insert_handler : Insert in DB: y
+2020-03-24 16:35:41,859: DEBUG: application.controller.insert_handler : PKs: distName
+2020-03-24 16:35:43,873: DEBUG: application.controller.insert_handler : Are you sure to insert the datas? Y/N: y
+2020-03-24 16:35:44,588: DEBUG: application.controller.insert_handler : (1, 'record inserted.')
+2020-03-24 16:35:52,965: DEBUG: application.controller.insert_handler : Insert a Table EXTERNALUTRANCELLFDD
+2020-03-24 16:35:53,343: DEBUG: application.controller.insert_handler : Table not registrated in _tables_id!
+2020-03-24 16:35:56,899: DEBUG: application.controller.insert_handler : Insert in DB: y
+2020-03-24 16:35:59,876: DEBUG: application.controller.insert_handler : PKs: distName
+2020-03-24 16:36:03,637: DEBUG: application.controller.insert_handler : Are you sure to insert the datas? Y/N: y
+2020-03-24 16:36:04,400: DEBUG: application.controller.insert_handler : (1, 'record inserted.')
+2020-03-24 16:36:23,609: DEBUG: application.controller.insert_handler : Insert a Table REPORTCONFIGSCELLA1A2
+2020-03-24 16:36:23,984: DEBUG: application.controller.insert_handler : Table not registrated in _tables_id!
+2020-03-24 16:36:27,572: DEBUG: application.controller.insert_handler : Insert in DB: y
+2020-03-24 16:36:27,953: DEBUG: application.controller.insert_handler : PKs: distName
+2020-03-24 16:36:30,038: DEBUG: application.controller.insert_handler : Are you sure to insert the datas? Y/N: y
+2020-03-24 16:36:30,777: DEBUG: application.controller.insert_handler : (1, 'record inserted.')
+2020-03-24 16:36:43,867: DEBUG: application.controller.insert_handler : Insert a Table REPORTCONFIGINTERRATLB
+2020-03-24 16:36:44,219: DEBUG: application.controller.insert_handler : Table not registrated in _tables_id!
+2020-03-24 16:36:46,812: DEBUG: application.controller.insert_handler : Insert in DB: y
+2020-03-24 16:36:47,307: DEBUG: application.controller.insert_handler : PKs: distName
+2020-03-24 16:36:49,734: DEBUG: application.controller.insert_handler : Are you sure to insert the datas? Y/N: y
+2020-03-24 16:36:50,471: DEBUG: application.controller.insert_handler : (1, 'record inserted.')
+2020-03-24 16:36:58,958: DEBUG: application.controller.insert_handler : Insert a Table DATARADIOBEARER
+2020-03-24 16:36:59,341: DEBUG: application.controller.insert_handler : Table not registrated in _tables_id!
+2020-03-24 16:37:01,656: DEBUG: application.controller.insert_handler : Insert in DB: y
+2020-03-24 16:37:02,046: DEBUG: application.controller.insert_handler : PKs: distName
+2020-03-24 16:37:07,066: DEBUG: application.controller.insert_handler : Are you sure to insert the datas? Y/N: y
+2020-03-24 16:37:07,783: DEBUG: application.controller.insert_handler : (1, 'record inserted.')
