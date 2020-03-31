@@ -1,5 +1,4 @@
 import mysql.connector
-from typing import Tuple
 
 class DB_Ids_Handler:
 

@@ -1,6 +1,0 @@
-2020-03-24 18:15:10,750: DEBUG: application.controller.insert_handler : Insert a Table AC
-2020-03-24 18:15:11,562: DEBUG: application.controller.insert_handler : Table not registrated in _tables_id!
-2020-03-24 18:15:15,906: DEBUG: application.controller.insert_handler : Insert in DB: y
-2020-03-24 18:15:16,321: DEBUG: application.controller.insert_handler : PKs: MODIND,MOI,description
-2020-03-24 18:15:19,172: DEBUG: application.controller.insert_handler : Are you sure to insert the datas? Y/N: y
-2020-03-24 18:15:21,292: DEBUG: application.controller.insert_handler : (1, 'record inserted.')
