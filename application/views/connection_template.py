@@ -13,6 +13,8 @@ def input_db_infos_page(db_type: str) -> Tuple[str]:
         :return - Tuple with connections Informations 
     '''
 
+    cls()
+
     # Creating a named tuple
     DB_infos = namedtuple('DatabaseInfo', 'host user passwd database')
 
@@ -28,9 +30,9 @@ def input_db_infos_page(db_type: str) -> Tuple[str]:
     if confirm.startswith('Y') or confirm.startswith('y'):
         cls()
         return DB_infos(host=host,
-                            user=user,
-                            passwd=passwd,
-                            database=database)
+                        user=user,
+                        passwd=passwd,
+                        database=database)
     else:
         # Close the program if not confirm
         print('\nClosing Program')

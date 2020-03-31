@@ -1,63 +1,41 @@
-import os
-from application.logging_manager import create_logging_debug
-from application.models import *
-
-loggin_debug = create_logging_debug(__name__)
-
-def cls():
-    os.system('cls' if os.name=='nt' else 'clear')
+from application.models import DB_Server_Handler
+from application.views import *
 
 def main():
 
-    cls()
-    print('Starting Program...')
-
-    Ids_Table = DB_Ids_Handler()
-    Technology = DB_Tech_Handler()
-
+    start_page()
+    
+    # Connecting Databases
+    DBexport_db_infos = input_db_infos_page('Server DB Name (DBexport Database)')
+    try:
+        DBexport_db = DB_Server_Handler(DBexport_db_infos.host, DBexport_db_infos.user,
+                                    DBexport_db_infos.passwd, DBexport_db_infos.database)
+        input('Press ENTER to continue...')
+    except:
+        print('Connection rejected, check the datas or contact the suport next time')
+        input('Press ENTER...')
+        exit(0)
+    
+    Netchart_db_infos = input_db_infos_page('Netchart DB Name')
+    try:
+        Netchart_db = DB_Server_Handler(Netchart_db_infos.host, Netchart_db_infos.user,
+                                    Netchart_db_infos.passwd, Netchart_db_infos.database)
+        input('Press ENTER to continue...')
+    except:
+        print('Connection rejected, check the datas or contact the suport next time')
+        input('Press ENTER...')
+        exit(0)
+    
     while True:
-        
-        cls()
-        input_table = input('Insert a Table: ')
-        loggin_debug.debug('Insert a Table {}'.format(input_table))
+        command = options_page(DBexport_db.curDB, Netchart_db.curDB)
 
-        if Ids_Table.check_data(input_table):
-            print('Table registrated in _tables_id!')
-            loggin_debug.debug('Table registrated in _tables_id!')
-            input('press enter to continue...')
-            
-            return False
-        else:
-            print('Table not registrated in _tables_id!')
-            loggin_debug.debug('Table not registrated in _tables_id!')
-            input('press enter to continue...')
-
-        apply = input('Insert the Table in {} ? Y/N : '.format(input_table))
-        loggin_debug.debug('Insert in DB: {}'.format(apply))
-        if apply.startswith('Y') or apply.startswith('y'):
-            
-            pk = Technology.get_pks(input_table)
-            if 'DATEDAY' in pk: pk.remove('DATEDAY')
-            elif 'dateday' in pk: pk.remove('dateday')
-
-            tableIDs = ",".join(pk)
-            print('PKs: {}'.format(tableIDs))
-            loggin_debug.debug('PKs: ' + tableIDs)
-
-            sure = input('Are you sure to insert the datas? Y/N: ')
-            loggin_debug.debug('Are you sure to insert the datas? Y/N: {}'.format(sure))
-            if sure.startswith('N') or sure.startswith('n'): return
-            elif sure.startswith('Y') or sure.startswith('y'):
-                resp = Ids_Table.add_data(input_table, tableIDs)
-                loggin_debug.debug(resp)
-                print(resp)
-                input('press enter to continue...')
-            else:
-                print('Invalid command!')
-
-        elif apply.startswith('N') or apply.startswith('n'):
-            print('Bye!')
-            return
-        else:
-            print('Invalid Command, Exiting!')
-            return
+        if command == "1":
+            print('Chose 1')
+        elif command == "2":
+            print('Chose 2')
+        elif command == "3":
+            print('Chose 3')
+        elif command == "4":
+            print('Chose 4')
+        elif command == "9":
+            exit(0)
