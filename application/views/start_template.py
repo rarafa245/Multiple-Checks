@@ -10,11 +10,14 @@ def start_page():
         :parram - None
         :return - None
     '''
+
+    cls()
     print('Netchart - Multiple Checks Program Tables Handler\n')
-    print('\t Version: 2.1.1 \t\t (Rafael Ferreira)\n\n')
+    print('\t Version: 2.1.1 - (Rafael Ferreira)\n\n')
     print(''' 
                 This Program was created with the purpose of maintaining elements 
             in tables for the Multiple Checks function.
                 For Any problems, contact the suport
     ''')
     input('Press ENTER to continue...')
+    cls()
