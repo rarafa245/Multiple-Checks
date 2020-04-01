@@ -6,11 +6,15 @@ def cls():
     os.system('cls' if os.name=='nt' else 'clear')
 
 def options_page(dbexport_db: str, netchart_db: str) -> str:
-    ''' Creating a option menu '''
+    ''' Creating a option menu 
+        :parram - dbexport_db : connected DB for DBexport
+                  netchart_db : connected DB for netchart
+        :return - str with selected choice
+    '''
 
     cls()
 
-    print('Databases:/n DBexport - {}\n Netchart - {}'.format(
+    print('Databases:\n DBexport - {}\n Netchart - {}'.format(
         netchart_db, dbexport_db
     ))
     print('''
