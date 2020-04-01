@@ -7,7 +7,7 @@ class DB_Server_Handler:
                 passwd: str, database: str):
         ''' Creating Connection to DB '''
 
-        print('Connecting to {}, please wait a moment...'.format(database))
+        print('\n\nConnecting to {}, please wait a moment...'.format(database))
         self.mydb = mysql.connector.connect(
             host=host,
             user=user,

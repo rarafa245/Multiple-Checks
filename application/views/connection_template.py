@@ -7,23 +7,25 @@ def cls():
 
     os.system('cls' if os.name=='nt' else 'clear')
 
-def input_db_infos_page(db_type: str) -> Tuple[str]:
+def input_db_infos_page() -> Tuple[str]:
     ''' Get some informations for the dbExpor database for connection:
-        :parram - db_type: The select type of DB (Server or Netchart)
+        :parram - None
         :return - Tuple with connections Informations 
     '''
 
     cls()
 
     # Creating a named tuple
-    DB_infos = namedtuple('DatabaseInfo', 'host user passwd database')
+    DB_infos = namedtuple('DatabaseInfo', 'host user passwd db_DBexport db_Netchart')
 
     # Capture some informations From User
-    print('Connection to {} !\n'.format(db_type))
+    print('Connection to Server: !\n')
     host = input('Insert the Server Host: ')
     user = input('Insert the User: ')
     passwd = input('Insert the Password: ')
-    database = input('Insert the Database: ')
+    print('\n\nInsert Databases:')
+    database0 = input('\nInsert Server Database (DBexport): ')
+    database1 = input('Insert Netchart Database: ')
 
     # Confirm Decision
     confirm = input('\n\nConfirm the informations? (Y/N) : ')
@@ -32,7 +34,8 @@ def input_db_infos_page(db_type: str) -> Tuple[str]:
         return DB_infos(host=host,
                         user=user,
                         passwd=passwd,
-                        database=database)
+                        db_DBexport=database0,
+                        db_Netchart=database1)
     else:
         # Close the program if not confirm
         print('\nClosing Program')
