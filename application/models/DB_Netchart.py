@@ -28,7 +28,7 @@ class DB_Netchart_Handler:
         myresult = self.mycursor.fetchall()
 
         for element in myresult:
-            if data in element:
+            if data.lower() in element or data.upper() in element:
                 return True
         else:
             return False

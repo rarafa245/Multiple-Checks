@@ -32,6 +32,11 @@ class DB_Server_Handler:
             if 'PRI' in element:
                 pk.append(element[0])
         
+        if 'dateday' in pk:
+            pk.remove('dateday')
+        elif 'DATEDAY' in pk:
+            pk.remove('DATEDAY')
+        
         return pk
 
     
@@ -45,8 +50,10 @@ class DB_Server_Handler:
         self.mycursor.execute("show tables")
         myresult = self.mycursor.fetchall()
 
+        check = "a_{}".format(data)
+
         for element in myresult:
-            if "a_{}".format(data) == element[0]:
+            if check.lower() == element[0].lower() or check.upper() == element[0].upper():
                 return True
         else:
             return False

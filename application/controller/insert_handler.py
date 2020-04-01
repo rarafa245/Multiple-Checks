@@ -1,5 +1,6 @@
 from application.models import *
 from application.views import *
+from .options_handler import *
 
 def main():
 
@@ -29,9 +30,13 @@ def main():
         command = options_page(DBexport_db.curDB, Netchart_db.curDB)
 
         if command == "1":
-            print('Chose 1')
+            # Check Table in DBexport DB
+            check_table_DBexport(DBexport_db)
+
         elif command == "2":
-            print('Chose 2')
+            # Check Table in Netchart DB
+            check_table_Netchart(Netchart_db)
+
         elif command == "3":
             print('Chose 3')
         elif command == "4":
