@@ -24,7 +24,7 @@ class DB_Netchart_Handler:
             :return - Bool of True/False
         '''
 
-        self.mycursor.execute("SELECT tableName FROM _table_ids")
+        self.mycursor.execute("SELECT tableName FROM _table_ids_copy")
         myresult = self.mycursor.fetchall()
 
         for element in myresult:
@@ -33,12 +33,21 @@ class DB_Netchart_Handler:
         else:
             return False
 
-    def add_data(self, tableName, tableIDs):
+    def add_data(self, tableName: str, tableIDs: str) -> None:
+        ''' Add one register in _table_ids 
+        :parram - tableName : String with name of the table
+                - tableIDs : String with pks of the table
+        :return - None 
+        '''
 
-        sql = "INSERT INTO _table_ids (tableName, tableIDs) VALUES (%s, %s)"
+        sql = "INSERT INTO _table_ids_copy (tableName, tableIDs) VALUES (%s, %s)"
         val = (tableName, tableIDs)
 
-        self.mycursor.execute(sql, val)
-        self.mydb.commit()
+        try:
+            self.mycursor.execute(sql, val)
+            self.mydb.commit()
+        except:
+            print('Error! Table not registed! Check the connection or the host')
+            return
 
-        return (self.mycursor.rowcount, "record inserted.")
+        print(self.mycursor.rowcount, "record inserted.")

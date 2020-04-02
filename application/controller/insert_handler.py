@@ -38,7 +38,9 @@ def main():
             check_table_Netchart(Netchart_db)
 
         elif command == "3":
-            print('Chose 3')
+            # Insert in Netchart DB _table_IDs
+            insert_one_register(DBexport_db, Netchart_db)
+
         elif command == "4":
             print('Chose 4')
         elif command == "9":
