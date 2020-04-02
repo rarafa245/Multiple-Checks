@@ -19,7 +19,7 @@ def input_db_infos_page() -> Tuple[str]:
     DB_infos = namedtuple('DatabaseInfo', 'host user passwd db_DBexport db_Netchart')
 
     # Capture some informations From User
-    print('Connection to Server: !\n')
+    print('Connection to Server!\n')
     host = input('Insert the Server Host: ')
     user = input('Insert the User: ')
     passwd = input('Insert the Password: ')

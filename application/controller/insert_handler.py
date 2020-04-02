@@ -38,10 +38,12 @@ def main():
             check_table_Netchart(Netchart_db)
 
         elif command == "3":
-            # Insert in Netchart DB _table_IDs
+            # Insert one table in Netchart DB _table_IDs
             insert_one_register(DBexport_db, Netchart_db)
 
         elif command == "4":
-            print('Chose 4')
+            # Insert one table in Netchart DB _table_IDs
+            insert_file_register(DBexport_db, Netchart_db)
+            
         elif command == "9":
             exit(0)
