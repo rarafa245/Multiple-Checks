@@ -46,4 +46,11 @@ def main():
             insert_file_register(DBexport_db, Netchart_db)
             
         elif command == "9":
+            print('Disconnecting DBs')
+            DBexport_db.mycursor.close()
+            Netchart_db.mycursor.close()
+            DBexport_db.mydb.close()
+            Netchart_db.mydb.close()
+            print('Disconnected Sucessfull!')
+            print('Bye!')
             exit(0)

@@ -1,1 +1,1 @@
-from .insert_handler import main
+from .interface_handler import main
