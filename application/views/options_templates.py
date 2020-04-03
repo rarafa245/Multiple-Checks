@@ -13,10 +13,11 @@ def options_page(dbexport_db: str, netchart_db: str) -> str:
     '''
 
     cls()
-
+    print('-----------------------------------------------------------------------')
     print('Databases:\n DBexport - {}\n Netchart - {}'.format(
         dbexport_db, netchart_db
     ))
+    print('-----------------------------------------------------------------------')
     print('''
         Select a Command:
 

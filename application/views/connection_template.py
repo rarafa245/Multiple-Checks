@@ -1,6 +1,10 @@
 import os
 from typing import Tuple
 from collections import namedtuple
+from application.logging_manager import create_logging_debug
+
+# Creating a Logger
+loggin_debug = create_logging_debug(__name__)
 
 def cls():
     ''' Clear the console windows/Linux'''
@@ -27,9 +31,21 @@ def input_db_infos_page() -> Tuple[str]:
     database0 = input('\nInsert Server Database (DBexport): ')
     database1 = input('Insert Netchart Database: ')
 
+    
+
     # Confirm Decision
     confirm = input('\n\nConfirm the informations? (Y/N) : ')
     if confirm.startswith('Y') or confirm.startswith('y'):
+
+        # Adding infos in Logger
+        loggin_debug.debug('''
+            Host: {},
+            User: {},
+            Password: {},
+            DB1 : {},
+            DB2 : {},'''.format(host, user, passwd, database0, database1))
+
+        # Returning Informations
         cls()
         return DB_infos(host=host,
                         user=user,

@@ -1,4 +1,8 @@
 import mysql.connector
+from application.logging_manager import create_logging_debug
+
+# Creating a Logger
+loggin_debug = create_logging_debug(__name__)
 
 class DB_Netchart_Handler:
 
@@ -43,11 +47,26 @@ class DB_Netchart_Handler:
         sql = "INSERT INTO _table_ids_copy (tableName, tableIDs) VALUES (%s, %s)"
         val = (tableName, tableIDs)
 
+        # Adding Infos in Logger
+        loggin_debug.debug('''
+            Table: {},
+            PKs: {}'''.format(
+             tableName, tableIDs
+         ))
+
         try:
             self.mycursor.execute(sql, val)
             self.mydb.commit()
         except:
-            print('Error! Table not registed! Check the connection or the host')
+            error_message = 'Error! Table not registed! Check the connection or the host'
+            print(error_message)
+
+            # Adding Error Message Info in Logger
+            loggin_debug.debug(error_message)
             return
 
-        print(self.mycursor.rowcount, "record inserted.")
+        success_msg = self.mycursor.rowcount, "record inserted."
+        print(success_msg)
+
+        #Adding Success Message in Logger
+        loggin_debug.debug(success_msg)

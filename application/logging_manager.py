@@ -13,7 +13,7 @@ def create_logging_debug(local):
     dt_string = now.strftime('%d%m%Y%H_%M_%S')
     print(dt_string)
 
-    file_handler = logging.FileHandler('log/L{}.log'.format(str(dt_string)))
+    file_handler = logging.FileHandler('log/LOG{}.log'.format(str(dt_string)))
     file_handler.setFormatter(formatter)
 
     logger.addHandler(file_handler)

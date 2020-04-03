@@ -1,5 +1,6 @@
 from .check_handler import check_table_DBexport, check_table_Netchart
 
+
 def insert_one_register(DBexport_db: object, Netchart_db: object, table_name=None)  -> bool:
     ''' Add one register in Netchart DB._table_ids 
         :parram - Objects with Databases Connections
